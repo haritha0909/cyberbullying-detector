@@ -1,4 +1,5 @@
-﻿altair==4.2.0
+pip install --upgrade pip
+altair==4.2.0
 argon2-cffi-bindings
 argon2-cffi==20.1.0
 asttokens==2.0.7
