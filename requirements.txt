@@ -30,7 +30,6 @@ Jinja2==3.1.2
 joblib==1.1.0
 jsonschema==4.9.1
 lxml==5.2.1
-kiwisolver==1.4.4
 MarkupSafe==2.1.1
 matplotlib==3.5.3
 mistune==0.8.4
