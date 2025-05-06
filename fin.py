@@ -53,7 +53,6 @@ else:
     No Tweet Text Entered!
     ''')
 st.write('''
-*
 ''')
 
 # Output on the page
@@ -78,7 +77,7 @@ else:
     No Tweet Text Entered!
     ''')
 
-st.write('''*''')
+st.write(''' ''')
 
 
 
