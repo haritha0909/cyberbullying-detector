@@ -23,7 +23,7 @@ import pickle
 
 image = Image.open('logo.png')
 
-st.image(image, use_column_width= True)
+st.image(image, use_container_width= True)
 
 st.write('''
 # Cyberbulling Tweet Recognition App
@@ -58,20 +58,21 @@ st.write('''
 
 # Output on the page
 st.header("Prediction")
-if tweet_input:
-    prediction = custom_input_prediction(tweet_input)
-    if prediction == "Age":
-        st.image("age_cyberbullying.png",use_container_width= True)
-    elif prediction == "Ethnicity":
-        st.image("ethnicity_cyberbullying.png",use_container_width= True)
-    elif prediction == "Gender":
-        st.image("gender_cyberbullying.png",use_container_width= True)
-    elif prediction == "Not Cyberbullying":
-        st.image("not_cyberbullying.png",use_container_width= True)
-    elif prediction == "Other Cyberbullying" :
-        st.image("other_cyberbullying.png",use_container_width= True)
-    elif prediction == "Religion":
-        st.image("religion_cyberbullying.png",use_container_width= True)
+if st.button("Analyze"):
+    if tweet_input:
+        prediction = custom_input_prediction(tweet_input)
+        if prediction == "Age":
+            st.image("age_cyberbullying.png",use_container_width= True)
+        elif prediction == "Ethnicity":
+            st.image("ethnicity_cyberbullying.png",use_container_width= True)
+        elif prediction == "Gender":
+            st.image("gender_cyberbullying.png",use_container_width= True)
+        elif prediction == "Not Cyberbullying":
+            st.image("not_cyberbullying.png",use_container_width= True)
+        elif prediction == "Other Cyberbullying" :
+            st.image("other_cyberbullying.png",use_container_width= True)
+        elif prediction == "Religion":
+            st.image("religion_cyberbullying.png",use_container_width= True)
 else:
     st.write('''
     No Tweet Text Entered!
