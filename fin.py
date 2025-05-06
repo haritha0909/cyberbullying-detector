@@ -35,8 +35,6 @@ This app predicts the nature of the tweet into 6 Categories.
 * Religion
 * Other Cyberbullying
 * Not Cyberbullying
-
-*
 ''')
 
 # Text Box
@@ -44,7 +42,6 @@ st.header('Enter Tweet ')
 tweet_input = st.text_area("Tweet Input", height= 150)
 print(tweet_input)
 st.write('''
-*
 ''')
 
 # print input on webpage
@@ -64,17 +61,17 @@ st.header("Prediction")
 if tweet_input:
     prediction = custom_input_prediction(tweet_input)
     if prediction == "Age":
-        st.image("age_cyberbullying.png",use_column_width= True)
+        st.image("age_cyberbullying.png",use_container_width= True)
     elif prediction == "Ethnicity":
-        st.image("ethnicity_cyberbullying.png",use_column_width= True)
+        st.image("ethnicity_cyberbullying.png",use_container_width= True)
     elif prediction == "Gender":
-        st.image("gender_cyberbullying.png",use_column_width= True)
+        st.image("gender_cyberbullying.png",use_container_width= True)
     elif prediction == "Not Cyberbullying":
-        st.image("not_cyberbullying.png",use_column_width= True)
+        st.image("not_cyberbullying.png",use_container_width= True)
     elif prediction == "Other Cyberbullying" :
-        st.image("other_cyberbullying.png",use_column_width= True)
+        st.image("other_cyberbullying.png",use_container_width= True)
     elif prediction == "Religion":
-        st.image("religion_cyberbullying.png",use_column_width= True)
+        st.image("religion_cyberbullying.png",use_container_width= True)
 else:
     st.write('''
     No Tweet Text Entered!
@@ -90,10 +87,10 @@ import streamlit as st
 import re
 
 # Basic Q&A data
-Basic_Q = ("What is social media?")
-Basic_Ans = "M + Store is an Online Medical Store. We supply medicines at your doorstep. You can order medicines on our website by uploading a proper prescription. Kindly go through our website to know better." 
-Basic_Q1 = ("from where you collect medicine?")
-Basic_Ans1 = "We collect generic medicines and supply them to your doorstep at a discounted price. We collect them from different authentic sellers and the Pradhan Mantri Bhartiya Jan Aushadhi Pariyojana Kendra."
+Basic_Q = ("What is cyberbullying")
+Basic_Ans = "Cyberbullying is the act of using digital platforms like social media, messaging apps, or online forums to harass, threaten, or humiliate others. It includes harmful behaviors like spreading rumors, sending abusive messages, or sharing embarrassing content." 
+Basic_Q1 = ("what are major category cyberbullying")
+Basic_Ans1 = "The major categories of cyberbullying include harassment, flaming, outing & doxxing, impersonation, exclusion, trolling, and cyberstalking. These involve actions like sending threats, spreading private information, creating fake profiles, and deliberately excluding or provoking others online."
 
 # General questions and responses
 general_questions = ["hi", "hello", "how are you", "how was your day", "what's up", "good morning", "good evening"]
